@@ -1,3 +1,4 @@
+// Pinia 설치할 때 예제로 자동 생성되는 기본 파일
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 

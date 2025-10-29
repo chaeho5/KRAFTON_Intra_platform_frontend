@@ -1,50 +1,46 @@
-# kraftonfront
+# KRAFTON TODO List 과제
 
-This template should help get you started developing with Vue 3 in Vite.
+KRAFTON Intra Platform Team 신입 프론트엔드 개발자 채용 과제입니다.
 
-## Recommended IDE Setup
+## 🚀 프로젝트 실행 방법
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+1.  **의존성 설치**
+    ```bash
+    npm install
+    ```
 
-## Recommended Browser Setup
+2.  **개발 서버 실행**
+    ```bash
+    npm run dev
+    ```
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+3.  **유닛 테스트 실행**
+    ```bash
+    npm run test:unit
+    ```
 
-## Customize configuration
+## 🎯 구현 기능 목록
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### ✅ 필수 기능
+- [x] TODO 등록 (제목, 내용)
+- [x] TODO 목록 조회
+- [x] TODO 수정 (제목, 내용)
+- [x] TODO 삭제
+- [x] 마감 기한 설정 및 수정
+- [x] 우선순위 설정 (높음, 중간, 낮음) 및 수정
+- [x] 완료 처리 (토글)
 
-## Project Setup
+### ✨ 추가 구현 (가산점)
+- [x] **데이터 영구 저장**: LocalStorage를 활용해 새로고침 시에도 데이터 유지
+- [x] **테스트 코드 작성**: Pinia 스토어의 핵심 로직(CRUD)에 대한 Vitest 유닛 테스트 구현
+- [x] **체계적 상태 관리**: Pinia (Vuex)를 도입하여 상태 로직을 컴포넌트와 분리
+- [x] **오류 피드백**: 폼 유효성 검사 (제목 필수) 시 `alert` 대신 인라인 오류 메시지 표시
+- [ ] **반응형 레이아웃**: (이건 우리가 미뤘으니 체크 해제)
 
-```sh
-npm install
-```
+## 🛠 사용 기술
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- **Core**: Vue.js 3 (Composition API, `<script setup>`)
+- **Build Tool**: Vite
+- **State Management**: Pinia
+- **Testing**: Vitest
+- **Linting / Formatting**: ESLint, Prettier
